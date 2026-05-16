@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         jdk 'JDK 25'
-        maven 'Maven3'
+        maven 'Maven 3'
     }
 
     stages {
@@ -16,7 +16,7 @@ pipeline {
 
         stage('Build Project') {
             steps {
-                bat 'mvn clean compile'
+                bat 'mvn clean test'
             }
         }
 
